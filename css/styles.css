@@ -3,7 +3,7 @@
 Fonts
 ===============
 */
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 
 /*
 =============== 
@@ -38,7 +38,7 @@ Variables
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
-  --ff-primary: "Lato", sans-serif;
+  --ff-primary: 'Lato', sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -196,6 +196,21 @@ Hero
   color: var(--clr-white);
   background: transparent;
   border-color: var(--clr-white);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(rgba(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+      url('../images/main.jpeg') center/cover no-repeat;
+  }
+
+  .hero-banner {
+    padding: 0;
+  }
+
+  .hero-banner p {
+    max-width: 45rem;
+  }
 }
 
 /*
