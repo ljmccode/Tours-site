@@ -319,6 +319,19 @@ Services
   margin-right: auto;
 }
 
+@media screen and (min-width: 576px) {
+  .services-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .service {
+    flex: 0 0 calc(50% - 1rem);
+    margin-bottom: 1rem;
+  }
+}
+
 /*
 =============== 
 Featured Tours
