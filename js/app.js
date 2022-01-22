@@ -11,11 +11,12 @@ toggle.addEventListener('click', () => {
 });
 
 // smooth scroll
-const scrollLinks = document.querySelectorAll('.scoll-link');
+const scrollLinks = document.querySelectorAll('.scroll-link');
 scrollLinks.forEach((link) => {
   link.addEventListener('click', (e) => {
     e.preventDefault();
     links.classList.remove('show-links');
+    console.log('click');
 
     const id = e.target.getAttribute('href').slice(1);
     const element = document.getElementById(id);
